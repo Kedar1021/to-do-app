@@ -25,7 +25,7 @@ export default function LoginPage() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="bg-white p-8 rounded-lg shadow-md w-96">
-                <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
+                <h1 className="text-2xl font-bold mb-6 text-center text-gray-900">Login</h1>
                 {error && <p className="text-red-500 mb-4">{error}</p>}
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
@@ -34,7 +34,7 @@ export default function LoginPage() {
                             type="text"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                            className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-gray-900"
                             required
                         />
                     </div>
@@ -44,7 +44,7 @@ export default function LoginPage() {
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                            className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-gray-900"
                             required
                         />
                     </div>
@@ -55,7 +55,7 @@ export default function LoginPage() {
                         Login
                     </button>
                 </form>
-                <p className="mt-4 text-center text-sm">
+                <p className="mt-4 text-center text-sm text-gray-600">
                     Don't have an account? <Link href="/register" className="text-blue-600 hover:underline">Register</Link>
                 </p>
             </div>
